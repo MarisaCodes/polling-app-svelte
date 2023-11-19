@@ -1,3 +1,19 @@
+# Ninja Poll
+
+This mini-project is from a tutorial series: [github link](https://github.com/iamshaunjp/svelte-tutorial/tree/master)
+and [youtube link](https://www.youtube.com/watch?v=zojEMeQGGHs&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO).
+
+## Improvements:
+
+Made with `TypeScript` and `Vite` for better developer experience. For styling I used `tailwindcss` as opposed to the tutorial's plain `css` styles.
+
+Some of the functionality for a few components is a bit different. For example, the use of radio input group with `bind:group` for changing the tabs in the `Tabs` component which is different from the conditional logic used in the tutorial. All in all, great learning experience.
+
+## UI
+The UI is exactly the same as in the tutorial:
+
+![](./svelte_tut.png)
+
 # Svelte + TS + Vite
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
