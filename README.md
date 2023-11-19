@@ -2,6 +2,7 @@
 
 This mini-project is from a tutorial series: [github link](https://github.com/iamshaunjp/svelte-tutorial/tree/master)
 and [youtube link](https://www.youtube.com/watch?v=zojEMeQGGHs&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO).
+[Live website link](https://charming-dodol-62414f.netlify.app/)
 
 ## Improvements:
 
