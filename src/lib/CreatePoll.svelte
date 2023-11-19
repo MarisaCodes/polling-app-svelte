@@ -1,4 +1,5 @@
 <script lang="ts">
+  import pollStore from "../stores/pollStore";
   import type { IPoll, IPollFields } from "../types/polls";
   import Btn from "./common/Btn.svelte";
   import { createEventDispatcher } from "svelte";
@@ -46,7 +47,12 @@
         votesB: 0,
         id: Math.random(),
       };
-      dispatch("addPoll", poll);
+      // save poll to store
+      pollStore.update((polls) => {
+        return [poll, ...polls];
+      });
+      // update active item
+      dispatch("addPoll");
     }
   }
 </script>

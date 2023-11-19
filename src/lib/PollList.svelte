@@ -1,12 +1,15 @@
 <script lang="ts">
-  import type { IPoll } from "../types/polls";
-
-  export let polls: IPoll[] = [];
+  import { fade, scale } from "svelte/transition";
+  import { flip } from "svelte/animate";
+  import PollDetails from "./PollDetails.svelte";
+  import pollStore from "../stores/pollStore";
 </script>
 
-<div class="poll-list">
-  {#each polls as poll}
-    <div>{poll.pollQuestion}</div>
+<div class="poll-list" in:fade>
+  {#each $pollStore as poll, i (poll)}
+    <div out:scale animate:flip={{ duration: 500 }}>
+      <PollDetails {poll} />
+    </div>
   {/each}
 </div>
 
